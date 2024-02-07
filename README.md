@@ -1,0 +1,2 @@
+# equipper
+TypeScript schema validator
