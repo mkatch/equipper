@@ -1,0 +1,28 @@
+{
+  "name": "equipper",
+  "version": "0.0.3",
+  "description": "TypeScript schema validator",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc && esbuild dist/index.js --bundle --line-limit=120 --minify --format=esm --outdir=lib/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkacz91/equipper.git"
+  },
+  "author": "Marcin Kaczmarek",
+  "license": "ISC",
+  "files": [
+    "README.md",
+    "lib/"
+  ],
+  "bugs": {
+    "url": "https://github.com/mkacz91/equipper/issues"
+  },
+  "homepage": "https://github.com/mkacz91/equipper#readme",
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "typescript": "^5.3.3"
+  }
+}
