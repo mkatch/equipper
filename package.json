@@ -1,28 +1,32 @@
 {
-  "name": "equipper",
-  "version": "0.0.4",
-  "description": "TypeScript schema validator",
-  "main": "lib/index.js",
-  "scripts": {
-    "build": "tsc && esbuild dist/index.js --bundle --line-limit=120 --minify --format=esm --outdir=lib/",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mkacz91/equipper.git"
-  },
-  "author": "Marcin Kaczmarek",
-  "license": "ISC",
-  "files": [
-    "README.md",
-    "lib/"
-  ],
-  "bugs": {
-    "url": "https://github.com/mkacz91/equipper/issues"
-  },
-  "homepage": "https://github.com/mkacz91/equipper#readme",
-  "devDependencies": {
-    "esbuild": "^0.20.0",
-    "typescript": "^5.3.3"
-  }
+	"name": "equipper",
+	"version": "0.0.4",
+	"type": "module",
+	"description": "TypeScript schema validator",
+	"main": "lib/index.js",
+	"scripts": {
+		"build": "tsc --project ./src/tsconfig.json && esbuild ./dist/index.js --bundle --line-limit=120 --minify --format=esm --outdir=./lib/",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mkacz91/equipper.git"
+	},
+	"author": "Marcin Kaczmarek",
+	"license": "ISC",
+	"files": [
+		"README.md",
+		"lib/"
+	],
+	"bugs": {
+		"url": "https://github.com/mkacz91/equipper/issues"
+	},
+	"homepage": "https://github.com/mkacz91/equipper#readme",
+	"devDependencies": {
+		"esbuild": "^0.20.0",
+		"jest": "^29.7.0",
+		"ts-jest": "^29.1.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.3.3"
+	}
 }
